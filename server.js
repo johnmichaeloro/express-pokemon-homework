@@ -18,6 +18,12 @@ app.get('/pokemon', (req, res) => {
   })
 })
 
+app.get('/pokemon/:id', (req, res) => {
+  res.render('show.ejs', {
+    'pokemon': pokemon[req.params.id]
+  })
+})
+
 app.listen(port, () => {
   console.log('app listening on port' + port);
 })
