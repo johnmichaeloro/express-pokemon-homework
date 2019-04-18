@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  </head>
+  <body>
+    <form action='/pokemon/<%=id%>?_method=PUT' method='POST'>
+      Name: <input type="text" name="name" value="<%=pokemon.name%>"> <br/>
+      Image: <input type="text" name="img" value="<%=pokemon.img%>"> <br/>
+      <input type="submit" name="Submit Changes" value="Submit Changes">
+    </form>
+  </body>
+</html>
